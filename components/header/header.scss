@@ -8,8 +8,8 @@ header {
   top: 0;
   background: base.$primaryColor;
   color: #FFFFFF;
-  height: 44px;
-  padding: 2px 20px;
+  height: 2.75rem;
+  padding: 2px 1.25rem;
   z-index: 10;
 }
 
@@ -44,5 +44,25 @@ header {
   p {
     font-size: 12px;
     font-weight: 700;
+  }
+}
+
+@media (min-width: base.$layout-breakpoint-sm) {
+  header {
+    height: 6rem;
+    padding: 0 5rem 0 3rem;
+  }
+
+  .cartButton {
+    width: 5rem;
+    height: 2.5rem;
+    
+    p {
+      font-size: 1rem;
+    }
+
+    svg {
+      scale: 1.6;
+    }
   }
 }
