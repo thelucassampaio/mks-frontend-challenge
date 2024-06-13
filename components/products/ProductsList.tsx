@@ -1,21 +1,19 @@
 "use client";
 
-import { fetchProducts } from "@/lib/products";
+import { useProducts } from "@/lib/hooks/useProducts";
 import type { Product } from "@/lib/products";
 
 import ProductCard from "./ProductCard";
-
-import "./products.scss";
 import ProductsListLoading from "./ProductsListLoading";
 
+import "./products.scss";
+
 export default function ProductsList() {
-  const { isPending, error, data } = fetchProducts();
+  const { isPending, error, data } = useProducts();
 
   if (isPending) return <ProductsListLoading />;
 
   if (error) return "Um erro ocorreu: " + error.message;
-
-  console.log(data.products);
 
   return (
     <div>
