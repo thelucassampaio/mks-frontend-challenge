@@ -1,0 +1,45 @@
+@use '@/app/base';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: base.$primaryColor;
+  color: #FFFFFF;
+  height: 44px;
+  padding: 2px 20px;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  align-items: baseline;
+
+  h1 {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-block: 0 2px;
+  }
+}
+
+.cartButton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 52px;
+  height: 26px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  color: #000000;
+  
+  p {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
