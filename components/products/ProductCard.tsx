@@ -9,15 +9,16 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <div className="card">
-      <Image
-        src={product.photo}
-        alt={product.name}
-        width={250}
-        height={160}
-        style={{
-          objectFit: "contain",
-        }}
-      />
+      <div className="imageContainer">
+        <Image
+          src={product.photo}
+          alt={product.name}
+          fill
+          style={{
+            objectFit: "contain",
+          }}
+        />
+      </div>
       <div className="productInfo">
         <div className="nameAndPrice">
           <h3>{product.name}</h3>

@@ -16,8 +16,7 @@ export default function ProductsList() {
   if (error) return "Um erro ocorreu: " + error.message;
 
   return (
-    <div>
-      <ProductsListLoading />
+    <div className="container">
       {data.products.map((product: Product) => (
         <ProductCard product={product} key={product.id} />
       ))}
