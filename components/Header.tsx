@@ -10,9 +10,7 @@ export default function Header() {
         <p>Sistemas</p>
       </div>
       <div className="cartButton">
-        <div>
-          <ShoppingCart />
-        </div>
+        <ShoppingCart />
         <p>0</p>
       </div>
     </header>

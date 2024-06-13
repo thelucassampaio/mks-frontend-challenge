@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import styles from "./page.module.css";
 import { useQuery } from "@tanstack/react-query";
 
 export default function Home() {
@@ -20,7 +18,7 @@ export default function Home() {
   console.log(data);
 
   return (
-    <main className={styles.main}>
+    <main>
       <h1>Main section</h1>
     </main>
   );
