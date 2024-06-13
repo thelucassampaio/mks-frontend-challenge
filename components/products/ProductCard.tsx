@@ -26,9 +26,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <p>R${formattedPrice}</p>
           </div>
         </div>
-        <div className="description">
-          <p>{product.description}</p>
-        </div>
+        <p className="description">{product.description}</p>
       </div>
       <div className="addToCartButton" role="button">
         <ShoppingBag />
