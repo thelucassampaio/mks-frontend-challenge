@@ -3,7 +3,7 @@ import { ReactQueryClientProvider } from "@/components/ReactQueryClientProvider"
 
 import { Montserrat } from "next/font/google";
 
-import "./globals.css";
+import Header from "@/components/Header";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -20,7 +20,10 @@ export default function RootLayout({
   return (
     <ReactQueryClientProvider>
       <html lang="pt">
-        <body className={montserrat.className}>{children}</body>
+        <body className={montserrat.className}>
+          <Header />
+          {children}
+        </body>
       </html>
     </ReactQueryClientProvider>
   );
