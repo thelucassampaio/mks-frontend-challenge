@@ -4,10 +4,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
   background: base.$primaryColor;
   color: #FFFFFF;
   height: 44px;
   padding: 2px 20px;
+  z-index: 10;
 }
 
 .logo {
@@ -34,7 +37,7 @@ header {
   align-items: center;
   width: 52px;
   height: 26px;
-  border-radius: 8px;
+  border-radius: base.$borderRadius;
   background: #FFFFFF;
   color: #000000;
   
