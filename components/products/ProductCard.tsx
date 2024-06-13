@@ -7,7 +7,6 @@ import "./products.scss";
 export default function ProductCard({ product }: { product: Product }) {
   const formattedPrice = parseFloat(product.price).toString();
 
-  console.log(product);
   return (
     <div className="card">
       <Image

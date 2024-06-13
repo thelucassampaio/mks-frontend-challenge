@@ -10,6 +10,18 @@
   position: relative;
 }
 
+.cardSkeleton {
+  width: 250px;
+  height: 328px;
+  margin-block: 1rem;
+  border-radius: base.$borderRadius;
+  box-shadow: 0px 2px 8px 0px #00000022;
+  overflow: hidden;
+  position: relative;
+  
+  @extend %skeleton_loading;
+}
+
 .productInfo {
   padding: 1rem;
 }
