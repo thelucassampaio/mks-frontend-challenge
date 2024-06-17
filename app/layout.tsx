@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ReactQueryClientProvider } from "@/components/ReactQueryClientProvider";
+import { ReactQueryClientProvider } from "@/lib/ReactQueryClientProvider";
 
 import { Montserrat } from "next/font/google";
 
